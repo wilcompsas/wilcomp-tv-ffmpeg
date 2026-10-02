@@ -1,0 +1,42 @@
+wilcomp-tv-ffmpeg
+FFmpeg audio decoder extension used by the Wilcomp TV Android app.
+Copyright 2026 Wilcomp S.A.S.
+
+This repository contains everything needed to rebuild libffmpegJNI.so, the
+native library of the Wilcomp TV app that contains FFmpeg: the JNI wrapper,
+the build scripts, the patches and the exact FFmpeg source code (published as
+a GitHub Release asset).
+
+-------------------------------------------------------------------------------
+FFmpeg
+-------------------------------------------------------------------------------
+Copyright (c) the FFmpeg developers (see the git history and the source files
+of the FFmpeg project).
+License: GNU Lesser General Public License version 2.1 or later
+(LGPL-2.1-or-later), see LICENSE.
+Built WITHOUT --enable-gpl, --enable-nonfree and --enable-version3.
+Origin: https://git.ffmpeg.org/ffmpeg.git, branch release/6.0,
+commit 110e2cd229d5acfdd950f5d09381afc41c263523 (RELEASE file: 6.0.2).
+Source code: ffmpeg-6.0.2-110e2cd229d5.tar.xz in this repository's Releases.
+No modifications were made to the FFmpeg source code.
+FFmpeg is a trademark of Fabrice Bellard, originator of the FFmpeg project.
+Wilcomp S.A.S. is not the author or owner of FFmpeg.
+
+-------------------------------------------------------------------------------
+AndroidX Media3 - decoder_ffmpeg extension
+-------------------------------------------------------------------------------
+jni/ffmpeg_jni.cc, jni/CMakeLists.txt, jni/build_ffmpeg.sh
+Copyright (C) The Android Open Source Project
+License: Apache License 2.0, see LICENSE-APACHE-2.0.
+Origin: https://github.com/androidx/media, tag 1.8.0. Copied unmodified.
+
+patches/media3-1.8.0-ndk-version.patch
+Modification by Wilcomp S.A.S. to libraries/decoder_ffmpeg/build.gradle of
+AndroidX Media3 (pins ndkVersion). License: Apache License 2.0.
+
+-------------------------------------------------------------------------------
+Build scripts
+-------------------------------------------------------------------------------
+scripts/*
+Copyright 2026 Wilcomp S.A.S.
+License: Apache License 2.0, see LICENSE-APACHE-2.0.

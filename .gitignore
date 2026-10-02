@@ -1,0 +1,4 @@
+# Fuentes descargadas y resultados de compilación
+work/
+# El tarball de FFmpeg se publica como asset del GitHub Release, no en git
+dist/

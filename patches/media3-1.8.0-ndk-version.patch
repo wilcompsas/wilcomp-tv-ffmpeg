@@ -1,0 +1,11 @@
+--- a/libraries/decoder_ffmpeg/build.gradle
++++ b/libraries/decoder_ffmpeg/build.gradle
+@@ -15,6 +15,8 @@
+ 
+ android {
+     namespace 'androidx.media3.decoder.ffmpeg'
++    // Wilcomp: mismo NDK que la app y que el build de FFmpeg en WSL (r27b).
++    ndkVersion '27.1.12297006'
+ }
+ 
+ // Configure the native build only if ffmpeg is present to avoid gradle sync
